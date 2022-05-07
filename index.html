@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <nav>
+            <h1>Calculadora de IMC</h1>
+        </nav>
+        <div class="principal">
+            <div class="esquerda">
+                <h2>Formulário</h2>
+                <div class="card-esquerda">
+                    <div class="resultado">
+                        <img src="https://cdn-icons-png.flaticon.com/128/4646/4646084.png" alt="ícone de perfil">
+                        <div class="saida-res">
+                            <label class="lb-esq">Sexo<div class="res-esq" id="sexo"> Sexo</div></label>
+                            <label class="lb-esq">IMC<div class="res-esq" id="imc">IMC</div></label>
+                            <label class="lb-esq">Resultado<div class="res-esq" id="resultado">Resultado</div></label>
+                        </div>
+                    </div>
+                    <div class="form">
+                        <div class="btn-top">
+                            <button id="Masculino" onclick="sexom()">Masculino</button>
+                            <button id="Feminino" onclick="sexof()">Feminino</button>
+                        </div>
+                        <div class="input">
+                            <label for="name">Nome <input type="text" id="nome" placeholder="Ex: Mário"></label>
+                            <label for="height">Altura <input type="number" id="altura" placeholder="Ex: 1,70"></label>
+                            <label for="weight">Peso <input type="number" id="peso" placeholder="Ex: 70"></label>
+                        </div>
+                        <div class="bnt-bottom">
+                            <button id="calcular" onclick="calc_imc()">Calcular</button>
+                            <button id="salvar" onclick="saida()">Salvar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="direita">
+                <h2>Dados salvos</h2>
+                <div class="card-direita">
+                    <div class="saida" id="saida">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
