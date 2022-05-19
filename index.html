@@ -6,7 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Calculadora IMC - Descubra agora o seu peso ideal!</title>
 </head>
 <body>
     <main>
@@ -42,18 +42,20 @@
                     </div>
                 </div>
             </div>
-
             <div class="direita">
                 <h2>Dados salvos</h2>
                 <div class="card-direita">
                     <div class="saida" id="saida">
-                        
+                        <input type="file" id="image_input" accept="image/png, image/jpg">
+                        <div id="display_image">
+                            <img src="https://cdn-icons-png.flaticon.com/128/4646/4646084.png" alt="Ícone de perfil">
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </main>
-
-    <script src="script.js"></script>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/imageLoader.js"></script>
 </body>
 </html>
