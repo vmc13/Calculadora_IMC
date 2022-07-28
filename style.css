@@ -232,3 +232,12 @@ h2 {
         align-items: center;
     }
 }
+
+#display_image {
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    border: 1px solid #000000;
+    background-position: center;
+    background-size: cover;
+}
